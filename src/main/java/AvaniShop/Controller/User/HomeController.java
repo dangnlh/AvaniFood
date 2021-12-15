@@ -17,7 +17,8 @@ public class HomeController {
 	public ModelAndView Index() {
 		ModelAndView mv = new ModelAndView(); 
 		mv.setViewName("user/index");
-		mv.addObject("slides", homeService.GetDataSlides()); 
+		mv.addObject("slides", homeService.GetDataSlides());
+		mv.addObject("categorys", homeService.GetDataCategorys()); 
 		return mv ;
 	}
 }
