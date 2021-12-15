@@ -9,16 +9,15 @@ import AvaniShop.Dao.SlidesDao;
 import AvaniShop.Service.User.HomeServiceImpl;
 
 @Controller
-public class HomeController {
-	@Autowired
-	HomeServiceImpl homeService ;  
+public class HomeController extends BaseController {
+	
 	
 	@RequestMapping(value= {"/", "/trang-chu"})
 	public ModelAndView Index() {
-		ModelAndView mv = new ModelAndView(); 
-		mv.setViewName("user/index");
-		mv.addObject("slides", homeService.GetDataSlides());
-		mv.addObject("categorys", homeService.GetDataCategorys()); 
-		return mv ;
+//		ModelAndView mv = new ModelAndView(); 
+		_mvShare.setViewName("user/index");
+		_mvShare.addObject("slides", _homeService.GetDataSlides());
+		_mvShare.addObject("categorys", _homeService.GetDataCategorys()); 
+		return _mvShare ;
 	}
 }
