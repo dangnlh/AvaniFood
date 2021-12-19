@@ -92,8 +92,7 @@
                 <div class="carousel-inner">
                   <div class="item active">
                    <a href="#"> <img src="<c:url value="/assets/user/img/${ item.img }"/>" alt="" style="width:100%"></a>
-                  </div>
-                
+                  </div> 
                 </div>
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
                 <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
@@ -114,7 +113,7 @@
 				
 				  <div class="control-group">
 					<label class="control-label"><span>Color</span></label>
-					<div class="controls">
+					<div class="controls">z
 					  <select class="span11">
 						  <option>${ item.name_color }</option>
 						 
