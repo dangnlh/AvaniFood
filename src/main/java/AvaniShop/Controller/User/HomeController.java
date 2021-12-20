@@ -19,8 +19,8 @@ public class HomeController extends BaseController {
 		_mvShare.addObject("categorys", _homeService.GetDataCategorys()); 
 		_mvShare.addObject("products", _homeService.GetDataNewProducts()); 
 		_mvShare.addObject("highlightproducts", _homeService.GetDataHighlightProducts()); 
-		
-
 		return _mvShare ;
 	}
+	
+	
 }
