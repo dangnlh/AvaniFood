@@ -14,6 +14,8 @@
 </style>
 </head>
 <body>
+
+
 <div class="row product-content">
 <div id="sidebar" class="span3">
 <div class="well well-small">
@@ -100,10 +102,10 @@
 			</div>
 			<div class="span7">
 				
-				<h3>${ item.name } (${ item.id_product }) </h3>
+				<h3>${ item.name } </h3>
 				<hr class="soft"/>
 				
-				<form class="form-horizontal qtyFrm">
+				<form class="form-horizontal qtyFrm" method="get" action="<c:url value="/AddCart/${ item.id_product }"/>">
 				  <div class="control-group">
 					<label class="control-label"><span>${ item.price }₫</span></label>
 					<div class="controls">
@@ -121,11 +123,11 @@
 					</div>
 				  </div>
 			
-				  <h4>${ item.title }k</h4>
+				  <h4>${ item.title }</h4>
 				  <p>Nowadays the lingerie industry is one of the most successful business spheres.
 				  Nowadays the lingerie industry is one of ...
 				  <p>
-				  <button type="submit" class="shopBtn"><span class=" icon-shopping-cart"></span> Add to cart</button>
+				  <button type="submit" class="shopBtn"><span class=" icon-shopping-cart"></span> Thêm giỏ hàng</button>
 				</form>
 			</div>
 			</c:forEach>
